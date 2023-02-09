@@ -1,0 +1,19 @@
+$colors: (
+    brand: rgba(33, 150, 243, 1),
+    background: rgb(47, 48, 58),
+    background2: rgba(245, 244, 250, 1),
+    links: rgb(117,117,117),
+    links2: rgba(255, 255, 255, 0.6),
+    logos: rgb(175,177,184),
+    titles: rgba(33, 33, 33, 1),
+    titles2: rgba(255, 255, 255, 1),
+    form-border: rgba(33, 33, 33, 0.2)
+);
+
+$primary-font: "Roboto", sans-serif;
+$secondary-font: "Raleway", sans-serif;
+$borders: 4px;
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+  }

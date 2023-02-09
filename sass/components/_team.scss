@@ -1,0 +1,98 @@
+.team-section {
+  background-color: getColor(background2);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team {
+  @include flex-container(column, center, center);
+  gap: 30px;
+  margin-top: 30px;
+
+  &__card {
+    @include flex-container(column, center, center);
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__image {
+    width: 450px;
+    height: 460px;
+  }
+
+  &__member {
+    @include text(500, 16px, 19px);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    @include text(400, 16px, 19px);
+    color: #757575;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__icons {
+    @include flex-container(row, flex-start);
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    fill: getColor(logos);
+    width: 44px;
+    height: 44px;
+    padding-top: 12px;
+    padding-left: 12px;
+    border-radius: 25px;
+  }
+
+  &__icon:hover {
+    fill: #fff;
+    background: getColor(brand);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .team__card {
+    width: 95%;
+  }
+  .team__image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .team {
+    @include flex-container(row, space-between);
+    flex-wrap: wrap;
+
+    &__image {
+      width: 354px;
+      height: 374px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .team {
+    @include flex-container(row, space-between);
+    margin-top: 50px;
+
+    &__image {
+      width: 270px;
+      height: 260px;
+    }
+  }
+}

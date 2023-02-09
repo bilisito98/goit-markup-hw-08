@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/modern-normalize.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <!-- _______ ________ HEADER _______ ________ -->
+    <header class="header">
+      <div class="container">
+        <section class="header__menu">
+          <a class="logo header__logo" href="index.html">WebStudio</a>
+          <nav class="header__nav">
+            <a class="header__link" href="index.html">Estudio</a>
+            <a class="header__link" href="#portfolio">Portafolio</a>
+            <a class="header__link" href="#contacto">Contactos</a>
+          </nav>
+          <ul class="header__contact-information">
+            <li class="header__contact">
+              <a
+                class="header__link header__contact-link"
+                href="mailto:info@devstudio.com"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="12"
+                  fill="none"
+                >
+                  <path
+                    fill="#757575"
+                    d="M14.5 0h-13C.67 0 0 .67 0 1.5v9c0 .83.67 1.5 1.5 1.5h13c.83 0 1.5-.67 1.5-1.5v-9c0-.83-.67-1.5-1.5-1.5Zm0 1a.5.5 0 0 1 .2.04L8 6.84l-6.7-5.8A.5.5 0 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.1l6.67 5.78a.5.5 0 0 0 .66 0L15 2.1v8.4a.5.5 0 0 1-.5.5Z"
+                  />
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header__contact">
+              <a
+                class="header__link header__contact-link"
+                href="tel:+525555296000"
+              >
+                <svg
+                  width="10"
+                  height="16"
+                  viewBox="0 0 10 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z"
+                    fill="#757575"
+                  />
+                </svg>
+                +52 55 5529 6000
+              </a>
+            </li>
+          </ul>
+          <button
+            class="header__mobile-menu menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="header__mobile-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="./images/icons/icons.svg#mobile"></use>
+            </svg>
+          </button>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section class="container" id="portfolio">
+        <ul class="button">
+          <li>
+            <button type="button" class="button__menu">Todo</button>
+          </li>
+          <li>
+            <button type="button" class="button__menu">Sitios-web</button>
+          </li>
+          <li>
+            <button type="button" class="button__menu">Aplicaciones</button>
+          </li>
+          <li>
+            <button type="button" class="button__menu">Diseño</button>
+          </li>
+          <li>
+            <button type="button" class="button__menu">Marketing</button>
+          </li>
+        </ul>
+        <section class="products">
+          <ul class="product">
+            <li class="product__hidden">
+              <img
+                class="product__image"
+                src="images/images2/laptop.jpg"
+                alt="laptop"
+                width="370"
+                height="294"
+              />
+              <div class="product__information">
+                <p>
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+            </li>
+            <li>
+              <dl>
+                <dt class="product__name">Tecnoduck</dt>
+                <dd class="product__type">Sitio-web</dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="product">
+            <li class="product__hidden">
+              <img
+                class="product__image"
+                src="images/images2/basketball.jpg"
+                alt="Jugadores de basketball"
+                width="370"
+                height="294"
+              />
+              <div class="product__information">
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <dl>
+                <dt class="product__name product__basketball">
+                  Poster New Orlean vs Golden Star
+                </dt>
+                <dd class="product__type">Diseño</dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="product">
+            <li class="product__hidden">
+              <img
+                class="product__image"
+                src="images/images2/seafood.jpg"
+                alt="Logo de pescado"
+                width="370"
+                height="294"
+              />
+              <div class="product__information">
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <dl>
+                <dt class="product__name">Restaurante Seafood</dt>
+                <dd class="product__type">Aplicaciones</dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="product">
+            <li class="product__hidden">
+              <img
+                class="product__image"
+                src="images/images2/headphones.jpg"
+                alt="Audifonos"
+                width="370"
+                height="294"
+              />
+              <div class="product__information">
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <dl>
+                <dt class="product__name">Proyecto Prime</dt>
+                <dd class="product__type">Marketing</dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="product">
+            <li class="product__hidden">
+              <img
+                class="product__image"
+                src="images/images2/boxes.jpg"
+                alt="Cajas"
+                width="370"
+                height="294"
+              />
+              <div class="product__information">
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <dl>
+                <dt class="product__name">Proyecto Cajas</dt>
+                <dd class="product__type">Aplicaciones</dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="product">
+            <li class="product__hidden">
+              <img
+                class="product__image"
+                src="images/images2/website.jpg"
+                alt="Pagina web"
+                width="370"
+                height="294"
+              />
+              <div class="product__information">
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <dl>
+                <dt class="product__name">La inspiración no tiene límites</dt>
+                <dd class="product__type">Sitio-web</dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="product">
+            <li class="product__hidden">
+              <img
+                class="product__image"
+                src="images/images2/magazine.jpg"
+                alt="Revista"
+                width="370"
+                height="294"
+              />
+              <div class="product__information">
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <dl>
+                <dt class="product__name">Edición Limitada</dt>
+                <dd class="product__type">Diseño</dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="product">
+            <li class="product__hidden">
+              <img
+                class="product__image"
+                src="images/images2/tag.jpg"
+                alt="Etiqueta"
+                width="370"
+                height="294"
+              />
+              <div class="product__information">
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <dl>
+                <dt class="product__name">Proyecto LAB</dt>
+                <dd class="product__type">Marketing</dd>
+              </dl>
+            </li>
+          </ul>
+          <ul class="product">
+            <li class="product__hidden">
+              <img
+                class="product__image"
+                src="images/images2/business.jpg"
+                alt="Negocio online"
+                width="370"
+                height="294"
+              />
+              <div class="product__information">
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <dl>
+                <dt class="product__name">Negocio en Crecimiento</dt>
+                <dd class="product__type">Aplicaciones</dd>
+              </dl>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <!-- _______ ________ FOOTER _______ ________ -->
+    <footer class="footer" id="contacto">
+      <section class="footer__flex container">
+        <!-- _______ ________ Contact _______ ________ -->
+        <section class="contact">
+          <a class="logo contact__logo" href="index.html">WebStudio</a>
+
+          <address class="contact__address">
+            Calz. Ticomán 500, Ciudad de <br />
+            México, CDMX, México
+          </address>
+
+          <address class="contact__info">
+            <a class="contact__data" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+            <a class="contact__data" href="tel:+525555296000"
+              >+52 55 5529 6000</a
+            >
+          </address>
+        </section>
+        <!-- _______ ________ Social Media _______ ________ -->
+        <section class="social-media">
+          <h3 class="footer__title">ENCUENTRENOS EN</h3>
+          <ul class="social-media__icons">
+            <li class="social-media__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="44px"
+                height="44px"
+              >
+                <use href="./images/icons/icons.svg#instagram"></use>
+              </svg>
+            </li>
+            <li class="social-media__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="44px"
+                height="44px"
+              >
+                <use href="./images/icons/icons.svg#twitter"></use>
+              </svg>
+            </li>
+            <li class="social-media__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="44px"
+                height="44px"
+              >
+                <use href="./images/icons/icons.svg#facebook"></use>
+              </svg>
+            </li>
+            <li class="social-media__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="44px"
+                height="44px"
+              >
+                <use href="./images/icons/icons.svg#linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </section>
+        <!-- _______ ________ Subscribe _______ ________ -->
+        <section class="subscribe">
+          <h3 class="footer__title" id="subscribe">
+            SUSCRÍBASE AL BOLETÍN INFORMATIVO
+          </h3>
+          <form class="subscribe__form" name="subscribe-form" autocomplete="on">
+            <label for="subscribe__email"></label>
+            <input
+              id="subscribe__email"
+              class="subscribe__email"
+              type="email"
+              name="subscribe__email"
+              placeholder="Correo electrónico"
+            />
+            <button class="subscribe__button" type="submit">
+              Suscríbase
+              <svg
+                class="subscribe__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24px"
+                height="24px"
+              >
+                <use href="./images/icons/icons.svg#sendicon"></use>
+              </svg>
+            </button>
+          </form>
+        </section>
+      </section>
+    </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close js-close-menu">
+        <svg
+          class="menu-close__svg"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use
+            class="menu-close__use"
+            href="./images/icons/icons.svg#mobile-close"
+          ></use>
+        </svg>
+      </button>
+      <section class="hidden-menu">
+        <nav class="hidden-menu__nav">
+          <a class="hidden-menu__link" href="index.html">Estudio</a>
+          <a class="hidden-menu__link" href="#portafolio">Portafolio</a>
+          <a class="hidden-menu__link" href="#contacto">Contactos</a>
+        </nav>
+        <ul class="hidden-menu__contacts">
+          <li class="hidden-menu__contact">
+            <a
+              class="hidden-menu__link hidden-menu__contact-link"
+              href="tel:+525555296000"
+              >+52 55 5529 6000
+            </a>
+          </li>
+          <li class="hidden-menu__contact">
+            <a
+              class="hidden-menu__link hidden-menu--link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="social-network">
+          <li class="social-network__media">Instagram</li>
+          <li class="social-network__media">Twitter</li>
+          <li class="social-network__media">Facebook</li>
+          <li class="social-network__media">LinkedIn</li>
+        </ul>
+      </section>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>

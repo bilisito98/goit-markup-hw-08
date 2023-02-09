@@ -1,0 +1,118 @@
+.title {
+  background-color: getColor(background);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.5),
+      rgba(47, 48, 58, 0.5)
+    ),
+    url("../images/mobile-banner.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  border: 1px solid;
+
+  &__text {
+    color: getColor(titles2);
+    @include text(900, 26px, 42px, 0.06em);
+    @include margin-auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 360px;
+    height: 84px;
+    margin-top: 118px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    @include flex-container(row, center, center);
+    padding: 10px 20px;
+    margin-bottom: 118px;
+
+    color: getColor(titles2);
+    background-color: getColor(brand);
+    border: none;
+    cursor: pointer;
+    @include text(700, 16px, 30px, 0.06em);
+    border-radius: $borders;
+    @include margin-auto;
+  }
+
+  &__button:hover {
+    background-color: rgba(24, 140, 232, 1);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .title {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.5),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url("../images/mobile-banner@2x.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.5),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url("../images/tablet-banner.jpg");
+
+    &__button {
+      margin-bottom: 128px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .title {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.5),
+          rgba(47, 48, 58, 0.5)
+        ),
+        url("../images/tablet-banner@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    background-size: auto;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.5),
+        rgba(47, 48, 58, 0.5)
+      ),
+      url("../images/desktop-banner.jpg");
+
+    &__text {
+      @include text(900, 44px, 60px, 0.06em);
+      width: 696px;
+      height: 120px;
+      margin-top: 200px;
+    }
+
+    &__button {
+      padding: 10px 32px;
+      margin-bottom: 200px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .title {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.5),
+          rgba(47, 48, 58, 0.5)
+        ),
+        url("../images/desktop-banner@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
