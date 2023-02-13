@@ -1,0 +1,110 @@
+.header {
+  border-bottom: 1px solid #ececec;
+
+  &__menu {
+    @include flex-container(row, space-between, center);
+    flex-wrap: wrap;
+    height: 80px;
+  }
+
+  &__nav {
+    @include flex-container(row, space-between, center);
+    flex-wrap: wrap;
+    width: 281px;
+    margin-right: 344px;
+    display: none;
+  }
+
+  &__link {
+    @include text(500, 14px, 16px, 0.02em);
+    color: inherit;
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    color: getColor(brand);
+  }
+
+  &__contact-information {
+    @include flex-container(row, flex-end, center);
+    gap: 30px;
+    display: none;
+  }
+
+  &__contact {
+    color: getColor(links);
+  }
+
+  &__contact:hover svg path {
+    fill: getColor(brand);
+  }
+
+  &__contact-link {
+    @include flex-container(row, flex-end, center);
+    color: inherit;
+    gap: 10px;
+  }
+
+  &__mobile-menu {
+    border: none;
+    background-color: inherit;
+  }
+  &__mobile-menu:hover,
+  &__mobile-menu:focus,
+  &__mobile-menu:active {
+    fill: getColor(brand);
+  }
+}
+
+@media (max-width: 480px) {
+  .header__logo {
+    margin-left: 2%;
+  }
+  
+  .header__mobile-menu {
+    margin-right: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__logo {
+      margin-right: 0;
+    }
+
+    &__nav {
+      @include flex-container(row, space-between, center);
+      flex-wrap: wrap;
+      width: 259px;
+      margin-right: 0;
+    }
+
+    &__contact-information {
+      @include flex-container(column, center, flex-start);
+      gap: 10px;
+    }
+
+    &__mobile-menu {
+        display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    &__nav {
+      @include flex-container(row, space-between, center);
+      flex-wrap: wrap;
+      width: 281px;
+      margin-right: 344px;
+    }
+    &__logo {
+        margin-right: 91px
+    }
+    &__contact-information {
+      @include flex-container(row, flex-end, center);
+      gap: 30px;
+    }
+  }
+}

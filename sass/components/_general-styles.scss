@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .body {
+    color: getColor(titles);
+    font-family: $primary-font;
+    @include text;
+  }
+
+  .container {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .sub-title {
+    @include text(700, 28px, 33px);
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .logo {
+    @include text(700, 24px, 28px);
+    font-family: $secondary-font;
+    color: getColor(brand);
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 738px;
+    }
+
+    .sub-title {
+      @include text(700, 28px, 33px);
+    }
+
+    .logo {
+      @include text(700, 24px, 28px);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+
+    .sub-title {
+      @include text(700, 36px, 42px);
+    }
+
+    .logo {
+      @include text(700, 26px, 31px);
+    }
+  }

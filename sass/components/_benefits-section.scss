@@ -1,0 +1,87 @@
+.benefits {
+  @include flex-container(column, space-between, center);
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  &__icon {
+    @include flex-container(row, center, center);
+    background: getColor(background2);
+    width: 450px;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: $borders;
+  }
+
+  &__svg {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    @include text(700, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include text(400, 14px, 24px, 0.03em);
+    width: 450px;
+    color: #757575;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits__icon {
+    width: 97%;
+    @include margin-auto;
+  }
+
+  .benefits__text {
+    width: 97%;
+    @include margin-auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .benefits {
+    @include flex-container(row, space-between);
+    flex-wrap: wrap;
+
+    &__icon {
+      width: 354px;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__text {
+      width: 354px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .benefits {
+    @include flex-container(row, space-between);
+    flex-wrap: nowrap;
+    margin-top: 82px;
+    margin-bottom: 99px;
+
+    &__icon {
+      width: 270px;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__text {
+      width: 270px;
+    }
+  }
+}
